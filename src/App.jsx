@@ -236,8 +236,8 @@ export default function SonarPrediction() {
                     )}
                   </button>
                 </div>
-                <div className="text-xs text-gray-500 font-mono bg-gray-50 p-2 rounded truncate">
-                  {row.features}
+                <div className="text-xs text-gray-500 font-mono bg-gray-50 p-2 rounded">
+                  {row.features.split(",").slice(0, 8).join(", ")}...
                 </div>
               </div>
             ))}
